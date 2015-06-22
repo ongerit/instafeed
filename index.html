@@ -18,7 +18,7 @@
     get: 'tagged',
     tagName: 'stylegurulove',
     clientId: '28d08067f8c643188a26d52f1c8af8ed',
-    limit: "200",
+    //limit: 60,
     links: false,
     template: '<div class="instaPhoto"><a  href="#" data-uk-modal="{target:&#39;#modal-{{id}}&#39;}"><img class="main-image" src="{{image}}" /> <div id="modal-{{id}}" class="uk-modal"><div class="uk-modal-dialog"><h1><img class="profile-image" src="{{model.user.profile_picture}}"/> <a class="profile-link" href="{{link}}">{{model.user.username}}</a></h1><div class="caption-body"><img src="{{image}}"/><p> {{caption}}</p></div> <!--<div class="uk-modal-caption">{{caption}}</div>--></div></div></a></div>',
     
@@ -39,6 +39,8 @@
       return true;
     } 
   });
+
+  
 
   feed.run();
   
