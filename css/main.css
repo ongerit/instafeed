@@ -30,12 +30,17 @@
     width: 90%;
     margin: 0 auto;
 }
-p{
+.header-one p{
     font-size: 1.5em;
     text-align: center;
 }
 
-h1{
+.header-one h1{
     text-align: center;
-    color: #363636;
+    color: #de3831;
+}
+
+#instafeed p, h1{
+     text-align: left;
+
 }
