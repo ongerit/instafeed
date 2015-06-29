@@ -10,39 +10,31 @@
   
   <script>
   
+  
+  
   var feed = new Instafeed({
     
 		//var modalCode = "{target:&#39;#modal-"+photoId+"&#39;}";
-	
-    
-    get: 'tagged',
-    tagName: 'stylegurulove',
-    clientId: '28d08067f8c643188a26d52f1c8af8ed',
-    //limit: 60,
+
+    get: 'user',
+    userId: 2105340433,
+    //clientId: '28d08067f8c643188a26d52f1c8af8ed',
+    accessToken: '2105340433.467ede5.54c303b775a4408fb89393b131c928eb',
+    limit: 30,
     links: false,
-    template: '<div class="instaPhoto"><a  href="#" data-uk-modal="{target:&#39;#modal-{{id}}&#39;}"><img class="main-image" src="{{image}}" /> <div id="modal-{{id}}" class="uk-modal"><div class="uk-modal-dialog"><h1><img class="profile-image" src="{{model.user.profile_picture}}"/> <a class="profile-link" href="{{link}}">{{model.user.username}}</a></h1><div class="caption-body"><img src="{{image}}"/><p> {{caption}}</p></div> <!--<div class="uk-modal-caption">{{caption}}</div>--></div></div></a></div>',
+    template: '<div class="instaPhoto"><a  href="#" data-uk-modal="{target:&#39;#modal-{{id}}&#39;}"><img class="main-image" src="{{image}}" /> <div id="modal-{{id}}" class="uk-modal"><div class="uk-modal-dialog"><h1><img class="profile-image" src="{{model.user.profile_picture}}"/> <a class="profile-link" href="http://www.instragram.com/{{caption}}">{{caption}}</a></h1><div class="caption-body"><img src="{{image}}"/><p> {{caption}}</p></div> <!--<div class="uk-modal-caption">{{caption}}</div>--></div></div></a></div>',
     
     resolution: 'low_resolution',
-    filter: function(image) {
-      var allowedUsernames = [
-        'tomkins__',
-        'otherreallybaduser'
-      ];
-
-      // check for blocked users
-      for (var i=0; i<image.comments.data.length; i++) {
-        if (image.comments.data[i].from.username == "tomkins__") {
-          return true;
-        }
-      }
-
-      return true;
-    } 
-  });
+   });
 
   
 
   feed.run();
+  
+  var instaLink = $('.profile-link').href;
+  console.log(instaLink);
+  
+  
   
   
   </script>
