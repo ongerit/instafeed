@@ -8,7 +8,7 @@
     border-radius: 47px;
 }
 
-#profile-link{
+.profile-link{
 	font-size: 1em;
 	color: #363636;
 	
@@ -37,5 +37,5 @@
 
 .header-one h1{
     text-align: center;
-    color: #de3831;
+    color: #de3831; /*RED Fashionista Color*/
 }
