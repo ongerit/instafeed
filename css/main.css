@@ -1,41 +1,46 @@
-.instaPhoto{
-	float: left;
-    width: 18%;
-    margin: 4px;
-}
-.profile-image{
-    width: 9%;
-    border-radius: 47px;
+.instaPhoto {
+  float: left;
+  width: 18%;
+  margin: 4px;
 }
 
-.profile-link{
-	font-size: 1em;
-	color: #363636;
-	
+.profile-image {
+  width: 9%;
+  border-radius: 47px;
 }
 
-.profile-link:hover, a:hover{
-  	color: #de3831;	
-	text-decoration: none;
+.profile-link {
+  font-size: 1em;
+  color: #363636;
+}
+
+.profile-link:hover,
+a:hover {
+  color: #de3831;
+  text-decoration: none;
 }
 
 .uk-open .uk-modal-dialog {
-	display: table;
-}
-.caption-body img{
-	 float: left;
-	 padding-right: 14px;
-}
-#insta-wrap{
-    width: 90%;
-    margin: 0 auto;
-}
-.header-one p{
-    font-size: 1.5em;
-    text-align: center;
+  display: table;
 }
 
-.header-one h1{
-    text-align: center;
-    color: #de3831; /*RED Fashionista Color*/
+.caption-body img {
+  float: left;
+  padding-right: 14px;
+}
+
+#insta-wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-one p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.header-one h1 {
+  text-align: center;
+  color: #de3831; /*RED Fashionista Color*/
+
 }
