@@ -46,13 +46,15 @@ a:hover {
 }
 
 .more{
-  display: inline-block;
+  display: block;
   padding: 0 0 0 15px;
   font-weight: 700;
   font: 16px/20px "Open Sans Condensed", Arial, Helvetica, sans-serif;
   color: #de3831; /*RED Fashionista Color*/
   text-transform: uppercase;
-  pointer: cursor;
+  cursor: pointer;
+  float: none: 
+  width:29%;
   
 }
 
