@@ -44,3 +44,56 @@ a:hover {
   color: #de3831; /*RED Fashionista Color*/
 
 }
+
+.more{
+  display: inline-block;
+  padding: 0 0 0 15px;
+  font-weight: 700;
+  font: 16px/20px "Open Sans Condensed", Arial, Helvetica, sans-serif;
+  color: #de3831; /*RED Fashionista Color*/
+  text-transform: uppercase;
+  pointer: cursor;
+  
+}
+
+.more::before{
+  content: " ";
+  display: inline-block;
+  width: 12px;
+  height: 33px;
+  margin: 0 15px;
+  background: url(http://www.collegefashionista.com/wp-content/themes/collegefashionista/images/arrows-dbl-down-red-twin.jpg) 0 19px no-repeat;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.more::after{
+  content: " ";
+  display: inline-block;
+  width: 12px;
+  height: 33px;
+  margin: 0 15px;
+  background: url(http://www.collegefashionista.com/wp-content/themes/collegefashionista/images/arrows-dbl-down-red-twin.jpg) 0 19px no-repeat;
+}
+
+.more-text span{
+  vertical-align: top;
+}
+
+.more-text span{
+  width: 100%;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #de3831;
+  text-align: center;
+  font-family: Lato;
+  font-size: 14px;
+  /*padding-left: 0;*/
+  height: 50px;
+  line-height: 50px;
+  /*background: none;*/
+  /*background-color: #fff;*/
+  vertical-align: top;
+  cursor: pointer;
+  
+}
