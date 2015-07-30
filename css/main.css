@@ -53,8 +53,11 @@ a:hover {
   color: #de3831; /*RED Fashionista Color*/
   text-transform: uppercase;
   cursor: pointer;
-  float: none: 
-  width:29%;
+  float: none;
+  width: 50%;
+  clear: both;
+  margin: 0 auto;
+  
   
 }
 
@@ -65,8 +68,6 @@ a:hover {
   height: 33px;
   margin: 0 15px;
   background: url(http://www.collegefashionista.com/wp-content/themes/collegefashionista/images/arrows-dbl-down-red-twin.jpg) 0 19px no-repeat;
-  text-align: center;
-  margin: 0 auto;
 }
 
 .more::after{
@@ -98,4 +99,8 @@ a:hover {
   vertical-align: top;
   cursor: pointer;
   
+}
+
+instafeed{
+  width: 95%;
 }
