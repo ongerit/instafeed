@@ -1,0 +1,9 @@
+##Instagram feed with switcher pane for Collegefashionista.com
+
+The purpose of this app was to create a page for collegefashionista which would display an aggragated list of some images that they wanted to currate from instagram. 
+
+Under the hood you will find the following frameworks being used:
+
+1. Uikit
+2. JQuery
+3. Instafeed.js
