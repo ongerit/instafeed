@@ -9,20 +9,27 @@ $(document).ready(function() {
     userId: 2105340433,
     //clientId: '28d08067f8c643188a26d52f1c8af8ed', //omit to use later
     accessToken: '2105340433.467ede5.54c303b775a4408fb89393b131c928eb',
-    limit: 10,
+    limit: 15,
     links: false,
     template: '<div class="instaPhoto"><a  href="#" data-uk-modal="{target:&#39;#modal-{{id}}&#39;}"><img class="main-image" src="{{image}}" /> <div id="modal-{{id}}" class="uk-modal"><div class="uk-modal-dialog"><h1><img class="profile-image" src="{{model.user.profile_picture}}"/> <a class="profile-link" target="_blank" href="http://www.instagram.com/{{caption}}">{{caption}}</a></h1><div class="caption-body"><img src="{{image}}"/></div> <!--<div class="uk-modal-caption">{{caption}}</div>--></div></div></a></div>',
 
     resolution: 'standard_resolution',
     
+        
+    filter: function(image) {
+        if (image.likes.count == 0) {
+            return true;
+        }
+        return false;
+    }, 
     
     after: function(){
       //disable button if no more results to load
       if (!this.hasNext()){
-        loadButton.setAttribute('disabled','disabled');
+        loadButton.style.display = 'none';
       }
     },
-    
+  
     
   });
   
@@ -41,7 +48,7 @@ $(document).ready(function() {
   $('#list-2').one("click",function(){
     
     var foundImages = 0;
-var maxImages = 12;  
+    var maxImages = 12;  
       var feed = new Instafeed({
     //var modalCode = "{target:&#39;#modal-"+photoId+"&#39;}";  //omit to use later
     target : 'instafeed2',
@@ -70,8 +77,8 @@ var maxImages = 12;
     after: function(){
       //disable button if no more results to load
       if (!this.hasNext()){
-        loadButton.setAttribute('disabled','disabled');
-      }load-more
+        loadButtonPartner.style.display = 'none';
+      }
     },
     
     

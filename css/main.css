@@ -104,3 +104,15 @@ a:hover {
 instafeed{
   width: 95%;
 }
+
+/*UI KIT OVERRIDES*/
+.uk-subnav{
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.uk-subnav-pill>.uk-active>* {
+  background: #de3831;
+  color: #fff;
+}
