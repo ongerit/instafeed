@@ -9,7 +9,7 @@ $(document).ready(function() {
         userId: 2105340433,
         //clientId: '28d08067f8c643188a26d52f1c8af8ed', //omit to use later
         accessToken: '2105340433.467ede5.54c303b775a4408fb89393b131c928eb',
-        limit: 15,
+        limit: 13,
         links: false,
         template: '<div class="instaPhoto"><a  href="#" data-uk-modal="{target:&#39;#modal-{{id}}&#39;}"><img class="main-image" src="{{image}}" /> <div id="modal-{{id}}" class="uk-modal"><div class="uk-modal-dialog"><h1><img class="profile-image" src="{{model.user.profile_picture}}"/> <a class="profile-link" target="_blank" href="http://www.instagram.com/{{caption}}">{{caption}}</a></h1><div class="caption-body"><img src="{{image}}"/></div> <!--<div class="uk-modal-caption">{{caption}}</div>--></div></div></a></div>',
 
