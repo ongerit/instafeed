@@ -57,8 +57,7 @@ a:hover {
   width: 50%;
   clear: both;
   margin: 0 auto;
-  
-  
+  text-align: center;
 }
 
 .more::before{
@@ -91,11 +90,8 @@ a:hover {
   text-align: center;
   font-family: Lato;
   font-size: 14px;
-  /*padding-left: 0;*/
   height: 50px;
   line-height: 50px;
-  /*background: none;*/
-  /*background-color: #fff;*/
   vertical-align: top;
   cursor: pointer;
   
@@ -110,6 +106,15 @@ instafeed{
   margin: 0 auto;
   text-align: center;
   display: block;
+  
+  ul{
+    padding: 0px;
+    color: #444;
+    li{
+      padding: 0;
+      background: none;
+      }
+  }
 }
 
 .uk-subnav-pill>.uk-active>* {
