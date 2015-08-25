@@ -62,6 +62,7 @@ $(document).ready(function() {
         template: '<div class="instaPhoto"><a  href="#" data-uk-modal="{target:&#39;#modal-{{id}}&#39;}"><img class="main-image" src="{{image}}" /> <div id="modal-{{id}}" class="uk-modal"><div class="uk-modal-dialog"><h1><img class="profile-image" src="/wp-content/themes/collegefashionista/images/heart-lrg.png"/> <a class="profile-link" target="_blank" href="http://www.instagram.com/{{caption}}">{{caption}}</a></h1><div class="caption-body"><img src="{{image}}"/></div> <!--<div class="uk-modal-caption">{{caption}}</div>--></div></div></a></div>',
 
         resolution: 'standard_resolution',
+        useHttp: true,
 
         success: function() {
             foundImages = 0;
